@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charser = "UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-COmpatible" content="ie=edge">
+    <title> Prueba de barra de navegacion </title>
+</head>
+<body>
+    <ul>
+        <li> <a> PAGINA DE LOS EQUIPOS </a> </li>
+
+
+
+
+    </ul>
+
+{% block content %} {% endblock %}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Estadio</td>
+            <td>Colonia</td>
+            <td>Patrocinador</td>
+            <td>Entrenador</td>
+        </tr>
+    </thead>
+    <tbody>
+       
+        {% for equipo in Equipo %}
+        <tr>
+            <td>{{Equipo.Nombre}}</td>
+            <td>{{Equipo.Estadio}}</td>
+            <td>{{Equipo.Colonia}}</td>
+            <td>{{Equipo.Entrenador}}</td>
+
+        </tr>>
+        {% endfor%}
+        
+
+
+    </tbody>
+</table>
+
+</body>
+</html>
